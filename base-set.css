@@ -1,0 +1,26 @@
+body{ 
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+.container{ 
+  width: 1304px;
+  margin: 0 auto;
+  outline: 1px solid black;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{ 
+  text-decoration: none;
+  color: inherit;
+}
+p, h1, h2, h3, h4, h5, h6{ 
+  margin: 0;
+  padding: 0;
+}
+.flex{ 
+  display: flex;
+}

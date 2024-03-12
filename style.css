@@ -1,0 +1,15 @@
+@import url(base-set.css);
+
+:root{ 
+    --bg-black: rgb(20, 20, 20); 
+    --accent-color: rgb(153, 130, 61); 
+}
+
+.logotype{ 
+    padding: 43px 68px;
+
+    background: var(--accent-color);
+    position: absolute;
+    width: 326px;
+    height: 136px;
+}
