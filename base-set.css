@@ -6,7 +6,7 @@ body{
 .container{ 
   width: 1304px;
   margin: 0 auto;
-  outline: 1px solid black;
+  outline: 2px solid red;
 }
 ul {
   margin: 0;

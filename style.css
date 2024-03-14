@@ -1,21 +1,30 @@
 @import url(base-set.css);
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap'); 
 
 :root{ 
     --bg-black: rgb(20, 20, 20); 
+    --bg-white: rgb(255, 255, 255);
     --accent-color: rgb(153, 130, 61); 
 
     --text-color:  rgba(255, 255, 255, 0.75); 
+    --black-text: rgb(20, 20, 20); 
     --text-hover-color: rgb(255, 255, 255); 
+
+    --sans: "Open Sans", sans-serif; 
+    --teko: "Teko", sans-serif;
 }
 .bg-header-and-section-hero{ 
     background-color: var(--bg-black);
 }
 .logotype{ 
     background: var(--accent-color);
-    position: absolute;
     width: 326px;
     height: 136px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 .logotype-image{ 
     justify-content: center;
@@ -34,6 +43,11 @@
 .nav-bar{ 
     height: 68px;
     align-items: center;
+    position: relative;
+}
+.nav-bar-lists{ 
+    gap: 250px;
+    align-items: center;
 }
 .list-archetecture{ 
     gap: 5px;
@@ -41,14 +55,94 @@
 }
 .list-archetecture-item{
     color: var(--text-color);
-    font-family: "Open Sans";
+    font-family: var(--sans);
     font-size: 9px;
     font-weight: 400;
     line-height: 15.3px;
     letter-spacing: 0%;
     text-align: center;
 }
-.heard-after{ 
+#heard:hover{ 
+    transform: rotate(360deg);
+    transition: 1.5s;
+}
+.list-archetecture-item:hover{ 
+    color: var(--text-hover-color);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.list-pages{ 
+    gap: 37px;
+}
+.list-pages-item{
+    color: var(--text-color);
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 2.76px;
+    text-align: left;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.list-pages-item:hover{ 
+    color: var(--text-hover-color);
+    transition: all 0.3s;
+}
+.list-pages-item:not(:hover), .list-archetecture-item:not(:hover), #heard:not(:hover){ 
+    transition: all 0.3s;
+}
+
+/* ========= Section hero ========  */
+
+.section-hero{ 
+    padding-top: 70px;
+    height: 660px;
+    background: url(images/golden-square.svg) no-repeat right bottom, url(images/section-hero-back.png) no-repeat left top, url(images/white-reqtuangle.svg) no-repeat left bottom;
+    /* background-repeat: no-repeat;
+    background-position: left top; */
+}
+
+.vantage-studio-part{ 
+    margin-left: 652px;
+    padding: 67px;
+    width: 450px;
+    height: 321px;
+    background-color: var(--bg-white);
+}
+.vantage-studio-part h4{ 
+    color: var(--accent-color);
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16.58px;
+    letter-spacing: 2.76px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.vantage-studio-part h1{ 
+    color: var(--black-text);
+    font-family: var(--teko);
+    font-size: 67px;
+    font-weight: 400;
+    line-height: 67.03px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
     margin: 0;
-    padding: 0;
+    margin-bottom: 32px;
+}
+.vantage-studio-part p{ 
+    color: var(--black-text);
+    font-family: var(--sans);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25.5px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.buttons-list{ 
+    gap: 17px;
 }
